@@ -1,0 +1,25 @@
+<div class="home">
+  <div class="top-left">Welcome to MovieGoers</div>
+  <div class="topnav">
+    <a class="logo">Movie Goers</a>
+    <a class="active" href="#home">Home</a>
+    <a href="#news">Favoris</a>
+    <a class="signin">Sign In</a>
+    <a href="#about">Log In</a>
+  </div>
+  <div class="fill">
+
+    <img src="/assets/wallE.jpg"/>
+    <div class="top-left">Welcome to MovieGoers</div>
+    <div class="followup">A cinephiles' dreams website: here you can explore your new favorate films,</div>
+    <div class="followup1">search and descover your favorate films</div>
+    <input type="text" class="searchedText" name ="searchedText"  [(ngModel)]="searchedText" (ngModelChange)="_searchTextInputChanged()" (change)="_searchTextInputChanged()" style=""placeholder="Search.." >
+
+  </div>
+  <ul>
+
+    <app-film-item *ngFor="let element of films;let i=index" [film]="element" [routerLink]="['/films/'+element.id,element.id]" >film</app-film-item>
+
+
+  </ul>
+</div>

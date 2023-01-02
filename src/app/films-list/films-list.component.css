@@ -1,0 +1,125 @@
+li {
+  padding: 16px;
+  display: inline-block;
+}
+
+ul{
+  display:block;
+}
+
+.topnav {
+  background-color: #04095AFF;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #324aa8;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:#324aa8;
+  color: white;
+}
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+
+}
+
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 600px;
+}
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  height: 100%
+}
+.home{
+  /*background-image: linear-gradient(to bottom right, #121a3f, #060313);*/
+  background-image: linear-gradient(to top, #c28ee0, #0b0c44);
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.top-left {
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(180deg, #e4e2e8, rgb(210, 212, 246));
+  color: transparent;
+
+  -webkit-background-clip: text;
+}
+.followup{
+  position: absolute;
+  top: 172px;
+  left: 100px;
+  font-size: 24px;
+  font-weight: 600;
+  /*background-image: linear-gradient(to top, #efe8f1, rgb(13, 2, 42));*/
+  background-color: #dddddd;
+  color: transparent;
+
+  -webkit-background-clip: text;
+  font-family: "Times New Roman", Times, serif;
+
+}
+.followup1{
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  font-size: 24px;
+  font-weight: 600;
+  /*background-image: linear-gradient(to top, #efe8f1, rgb(13, 2, 42));*/
+  background-color: #dddddd;
+  color: transparent;
+
+  -webkit-background-clip: text;
+  font-family: "Times New Roman", Times, serif;
+
+}
+a.logo {
+  font-size: 23px !important;
+  font-weight: bold;
+  font-family: "Brush Script MT", Lucida Handwriting, cursive;
+}
+a.about{
+  float: left;
+}
+signin{
+
+
+  border: #c28ee0 !important;
+  text-align: right;
+}
+.searchedText{
+  border-radius: 8px;
+  position : absolute;
+
+  top:615px;
+
+  padding: 6px;
+  border: none;
+  width:1000px;
+  height:50px;
+  font-size: 17px;
+}
