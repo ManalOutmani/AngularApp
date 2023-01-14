@@ -10,8 +10,8 @@ const API_TOKEN="0326a15e822e0b66c87142c8a6590d26";
 
 export class FilmService {
 
-    constructor(private http:HttpClient) {
-  }
+  constructor(private http:HttpClient) {
+    }
   name!:String;
   add(film:film){
 
@@ -37,7 +37,6 @@ export class FilmService {
   }
   getFilm(id: string) {
     const url ='https://api.themoviedb.org/3/movie/'+id+'?api_key='+API_TOKEN;
-
     return this.http.get(url).toPromise().then((response : any)=> response)
     .catch((error)=> console.error(error));
 

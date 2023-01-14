@@ -45,6 +45,9 @@ export class FilmsListComponent implements OnInit {
     this.filmService.getFilmsFromServer(this.searchedText,this.pageNumber).
     then((data:any)=>{this.films=data.results});
   }
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+  }
 
 
 

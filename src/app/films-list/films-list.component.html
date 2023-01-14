@@ -13,12 +13,12 @@
     <div class="top-left">Welcome to MovieGoers</div>
     <div class="followup">A cinephiles' dreams website: here you can explore your new favorate films,</div>
     <div class="followup1">search and descover your favorate films</div>
-    <input type="text" class="searchedText" name ="searchedText"  [(ngModel)]="searchedText" (ngModelChange)="_searchTextInputChanged()" (change)="_searchTextInputChanged()" style=""placeholder="Search.." >
+    <input type="text" class="searchedText" #target name ="searchedText" (click)="scroll(target)" [(ngModel)]="searchedText" (ngModelChange)="_searchTextInputChanged()" (change)="_searchTextInputChanged()" style=""placeholder="Search.." >
 
   </div>
   <ul>
 
-    <app-film-item *ngFor="let element of films;let i=index" [film]="element" [routerLink]="['/films/'+element.id,element.id]" >film</app-film-item>
+    <app-film-item  *ngFor="let element of films;let i=index" [film]="element" [routerLink]="['/films/'+element.id,element.id]" >film</app-film-item>
 
 
   </ul>

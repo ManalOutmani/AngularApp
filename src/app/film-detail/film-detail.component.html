@@ -30,10 +30,41 @@
     <div class="value">
       release date:{{ film.release_date | date:'dd/mm/yyyy' }}
     </div>
-
+    <div class="value">
+      runtime:{{ film.runtime  }} min
+    </div>
+    <div class="value">
+      status:{{ film.status }}
+    </div>
+    <div class="value">
+      tagline:{{ film.tagline }}
+    </div>
+    <div class="value">
+      vote count:{{ film.vote_count }} vote
+    </div>
+    <div class="value">
+      vote average:{{ film.vote_average }}
+    </div>
+    <div> genres:
+      <div *ngFor="let genre of film.genres">
+        {{ genre.name }}
+      </div>
+    </div>
+    <div> production companies:
+      <div *ngFor="let prod of film.production_companies">
+        {{ prod.name }}
+      </div>
+    </div>
+    <div> Spoken languages :
+      <div *ngFor="let lan of film.spoken_languages">
+        {{ lan.name }}
+      </div>
+    </div>
   </div>
-
 </div>
+
+
+
 
 
 </body>
